@@ -527,9 +527,8 @@ textarea {
 }
 #buy-showder dl dt {
   margin-left: 20vw;
-  padding: 1.66667rem;
+  padding: 1.66667rem 0;
   font-weight: bold;
-  letter-spacing: 1vw;
 }
 #buy-showder dl dt p {
   margin-top: 8vw;

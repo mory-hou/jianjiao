@@ -13,20 +13,17 @@
 	</head>
 	<body>
 		<div class="main">
-			<img class="img1" src="http://og42u3hva.bkt.clouddn.com/img/normallogin_1.png" />
 			<img class="img2" src="http://og42u3hva.bkt.clouddn.com/img/normallogins.png" />
 		</div>
 	</body>
 	<script src="js/jquery-1.10.1.min.js"></script>
 	<script>
-		$(".img1").fadeOut(1500,function(){
-			$(".img2").fadeIn(1500,function()
+		$(".img2").fadeIn(1500,function()
+		{
+			setTimeout(function()
 			{
-				setTimeout(function()
-				{
-					location.href="shouye.html";
-				},2000);
-			});
+				location.href="shouye.html";
+			},2000);
 		});
 	</script>
 </html>

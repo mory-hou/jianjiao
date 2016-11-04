@@ -169,13 +169,6 @@ textarea {
   display: flex;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
-.main .img1 {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  display: block;
-}
 .main .img2 {
   width: 100%;
   height: 100%;

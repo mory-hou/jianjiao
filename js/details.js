@@ -1,5 +1,6 @@
 $.getJSON("http://data.applinzi.com/details.php?jsoncallback=?",function(data){
 	var goodsId = location.href.split("?")[1].split("=")[1];
+	$("#buy-showder").attr("data-id",goodsId);
 	var result = JSON.parse(data);
 	var length = result[goodsId]["tabImg"].length;
 	for(var i=0;i<length;i++){
@@ -8,14 +9,14 @@ $.getJSON("http://data.applinzi.com/details.php?jsoncallback=?",function(data){
 	}
 	var html = $("<p>"+result[goodsId]["name"]+"<br><span>"+result[goodsId]["price"]+"</span></p>");
 	html.insertBefore("#min-nav");
-	var html = $("<dd><img src="+result[goodsId]["tabImg"][0]+" /></dd><dt>大笨钟原创水晶版画<p id='price'>1050.00</p></dt>");
+	var html = $("<dd><img src="+result[goodsId]["tabImg"][0]+" /></dd><dt>"+result[goodsId]["name"]+"<p id='price'>"+result[goodsId]["price"]+"</p></dt>");
 	html.insertBefore("#close");
 	var length = result[goodsId]["color"].length;
 	for(var i=0;i<length;i++){
 		var color = $("<a class='color'>"+result[goodsId]["color"][i]+"</a>");
 		$("#buies li").eq(0).append(color);
 	}
-	var name = $("<a class ='name'>"+result[goodsId]["price"]+"</a>")
+	var name = $("<a class ='name'>"+result[goodsId]["name"]+"</a>")
 	$("#buies li").eq(1).append(name);
 	
 	$(".color").on("touchend",function(){
