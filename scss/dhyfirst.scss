@@ -1,6 +1,15 @@
 @charset "utf-8";
 @import "mobile";
-.warp{ width: 100%; height: 100%; position: relative;}
+
+@mixin flex{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.warp{ width: 100%; height: 100%; position: relative; @include flex;}
 .tips{ position: absolute; top: 5%; right: 6%; font-size: 1.6rem; color: #888;
        a{
            color: #888;
@@ -28,13 +37,7 @@
 	from{ filter: alpha(opacity=100); -moz-opacity:1; opacity: 1;z-index: 10;}
     to{ filter: alpha(opacity=0); -moz-opacity:0; opacity: 0; z-index: -1;}
 }
-@mixin flex{
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-}
+
 
 
 .main{

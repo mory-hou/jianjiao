@@ -120,6 +120,7 @@ $("#showder-footer").on("touchend",function(){
 			flyImg.remove();
 		});
 		anum();
+		$("#showder").fadeOut(1500);
 	}
 });
 

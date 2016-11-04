@@ -8,7 +8,7 @@ function  getData(){
 		var key = localStorage.key(i);
 		if(key.indexOf("goods_")!=-1){ 
 			var good = JSON.parse(localStorage.getItem(key));
-            var  html = $("<div class='shoplist' data-id="+good["id"]+"><ul class='control'><li><i class='oneshop'></i></li><li><span class='reduce'>-</span><span class='onenum'>"+good["num"]+"</span><span class='add'>+</span></li></ul><dl class='shopinfo'><dt><a href='javascript:void(0)'><img src="+good["img"]+"/></a></dt><dd><div class='shopname'>"+good["name"]+"</div><div class='shopattr'><span class='color'>"+good["color"]+"</span><span class='style'>"+good["name"]+"</span></div><div class='shopmessage'>￥ <span class='price'>"+good["price"]+"</span><span class='shopnum'>"+good["num"]+"</span></div></dd></dl></div>");
+            var  html = $("<div class='shoplist' data-id="+good["id"]+"><ul class='control'><li><i class='oneshop'></i></li><li><span class='reduce'>-</span><span class='onenum'>"+good["num"]+"</span><span class='add'>+</span></li></ul><dl class='shopinfo'><dt><a href='javascript:void(0)'><img src="+good["img"]+" /></a></dt><dd><div class='shopname'>"+good["name"]+"</div><div class='shopattr'><span class='color'>"+good["color"]+"</span><span class='style'>"+good["name"]+"</span></div><div class='shopmessage'>￥ <span class='price'>"+good["price"]+"</span><span class='shopnum'>"+good["num"]+"</span></div></dd></dl></div>");
            parent.append(html);
 		}
 	}

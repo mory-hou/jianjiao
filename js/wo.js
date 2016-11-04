@@ -7,6 +7,9 @@ for(var i=0;i<length;i++){
 		break;
 	}else{
 		$("#headerfooter .zhuce").html("点击登录/注册");
+		$("#headerfooter").on("touchstart",function(){
+			location.href="denglu.html";
+		});
 	}
 }
 

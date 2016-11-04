@@ -27,7 +27,7 @@ function  getData(){
 		var key = localStorage.key(i);
 		if(key.indexOf("goods_")!=-1){ 
 			var good = JSON.parse(localStorage.getItem(key));
-            var  html = $("<dl class='shopinfo'><dt><a href='javascript:void(0)'><img src="+good["img"]+"/></a></dt><dd><div class='shopname'>"+good["name"]+"</div><div class='shopattr'><span class='color'>"+good["color"]+"</span><span class='style'>"+good["name"]+"</span></div><div class='shopmessage'>￥ <span class='price'>"+good["price"]+"</span><span class='shopnum'>"+good["num"]+"</span></div></dd></dl>");
+            var  html = $("<dl class='shopinfo'><dt><a href='javascript:void(0)'><img src="+good["img"]+" /></a></dt><dd><div class='shopname'>"+good["name"]+"</div><div class='shopattr'><span class='color'>"+good["color"]+"</span><span class='style'>"+good["name"]+"</span></div><div class='shopmessage'>￥ <span class='price'>"+good["price"]+"</span><span class='shopnum'>"+good["num"]+"</span></div></dd></dl>");
            html.insertBefore(".shopaccount");
            var totalNum =parseInt($(".shopaccount span").eq(0).html())+good["num"];
            $(".shopaccount span").eq(0).html(totalNum);
