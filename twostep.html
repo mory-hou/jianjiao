@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>尖叫设计</title>
+		<link rel="shortcut icon"  type="image/ico" href="http://og42u3hva.bkt.clouddn.com/img/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_8bybdble4wxhto6r.css" />
+		<link rel="stylesheet" type="text/css" href="scss/orderstep.css" />
+		<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+	</head>
+
+	<body>
+		<header id="header">
+			<div class="header">
+				<a  href="onestep.html" ><i class="iconfont icon-xiangzuojiantou"></i></a>
+				<div class="titleChange">添加收货地址</div>
+				<a href="javascript:void(0)" class="confirm">确定</a>			
+				<a href="javascript:void(0)" class="edit">修改</a>
+			</div>
+		</header>
+		<section id="container">
+			<ul class="fillin">
+				<li>
+					<div>收件人</div>
+					<div><input type="text" placeholder="请输入您的姓名" class="username" onblur="othereg(this);"/></div>
+				</li>
+				<li>
+					<div>手机号</div>
+					<div><input type="text"  placeholder="请输入您的手机号" class="userphone"/></div>
+				</li>
+				<li>
+					<div>省市区</div>
+					<div><input type="text"  placeholder="请选择地区" class="userattr" onblur="othereg(this);"/></div>
+				</li>
+				<li>
+					<div>详细地址</div>
+					<div><input type="text"  placeholder="请输入详细地址" class="detailaddr" onblur="othereg(this);"/></div>
+				</li>
+				<li>
+					<i class="defaultDot"></i>默认地址
+				</li>
+			</ul>
+		</section>
+		<span id="showtip"></span>
+		<footer id="footertwo"><a href="javascript:void(0)">+删除收货地址</a></footer>
+	</body>
+	<script src="js/addaddress.js" type="text/javascript" charset="utf-8"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

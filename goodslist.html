@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<!--移动端适配-->
+		<title>尖叫设计</title>
+		<link rel="shortcut icon"  type="image/ico" href="http://og42u3hva.bkt.clouddn.com/img/favicon.ico"/>
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_8bybdble4wxhto6r.css" />
+		<link rel="stylesheet" href="scss/goodslist.css" />
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+	</head>
+<body onload="loaded()">
+	<div id="warp-1">
+		<div id="warp-2">
+			<header id="header-1"></header>
+			<section id="section-header">
+				<h2></h2>
+				<p></p>
+			</section>
+			<section id="section-middle">
+				<ul id="content"></ul>
+			</section>
+		</div>
+	</div>
+		<header id="warp-header">
+			<a href="shouye.html">
+				<i class="iconfont icon-xiangzuoyuanjiantou"></i>
+			</a>
+			<a href="shopcart.html">
+				<i class="iconfont icon-gouwuche1"><i></i></i>
+			</a>
+		</header>
+	</body>
+	<script type="text/javascript">
+		var myScroll;
+		function loaded () {
+		myScroll = new IScroll('#warp-1',{preventDefault: false});
+		}
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	</script>
+	<script src="js/goodslist.js" type="text/javascript" charset="utf-8"></script>
+</html>

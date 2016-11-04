@@ -1,0 +1,45 @@
+@charset "utf-8";
+@import "mobile";
+body,html{ width: 100%; height: 100%}
+
+@mixin flex{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.warp{
+    @include flex;
+    flex-direction: column;
+    height: 100%; width: 100%;
+    background: #f5f5f4;
+}
+
+.cont1{ flex: 41; @include flex; flex-direction: column; background: white;
+        div{ flex: 8.25; border-bottom: 1px solid #ededed; margin-left: 1rem;  @include flex; align-items: center;
+             input{ @include flex; align-items: center; outline: none; border: 0; text-indent: 1rem; width: 100%; height: 100%; font-size: 1rem;}
+           }
+        .yzm{ @include flex; flex-direction: row;
+                .yzm1{ flex: 6;}
+                .yzm2{ flex: 4; @include flex; justify-content: center; align-items: center; font-size: 1rem; color: sandybrown;}
+            }
+        .mima1{ border: 0;}  
+                 
+      }
+
+.header{ flex: 8; background: white; border-bottom: 1px solid #ededed;
+        font-size: 1.4rem; color: black; @include flex; align-items: center;
+         span{ margin-left: 35%;}
+         a{
+             color: #000000;
+         }
+       }
+
+
+.cont2{ flex: 59;
+         div{ width: 90%; margin: 0 auto; text-align: center; height: 3rem; line-height: 3rem;}
+        .confirms{ background: #ffd444; font-size: 1.2rem; margin-top: 4.5rem;}
+      }       
+       

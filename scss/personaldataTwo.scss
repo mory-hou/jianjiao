@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import "mobile";
+body,html{ width: 100%; height: 100%}
+
+@mixin flex{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+
+.warp{
+    @include flex;
+    flex-direction: column;
+    height: 100%; width: 100%;
+    background: #f5f5f4;
+    font-size: 1rem;
+}
+
+.cont1{ flex: 7.9; background: white;@include flex; flex-direction: row; border-bottom: 1px solid #ededed;
+        a{ flex: 1; @include flex; color: black;}
+        .a1{ align-items: center;  font-size: 1.3rem;
+             i{ color: black; margin-left: 1rem;}
+           }
+        .a2{ justify-content: center; align-items: center; font-size: 1.3rem;}
+        .a3{ align-items: center; flex-direction: row-reverse;}
+      }
+
+.cont2{ flex: 36.1; @include flex; flex-direction: column; padding-left: 1rem; background: white;
+        .co1{ flex: 30.6!important;
+              .describe{ @include flex; align-items: center;
+                        .sex{ width: 1rem; height: 1rem; margin-left: 2rem;}
+                       }           
+            }
+        .co2{ flex: 23.13; border-bottom: 1px solid #ededed; @include flex; flex-direction: row;
+              .names{ flex: 1; @include flex; align-items: center;}
+              .describe{ flex: 4; @include flex; align-items: center;
+                         input{ @include flex; align-items: center; outline: none; border: 0; text-indent: 1rem; width: 100%; height: 100%;}
+                         select{ outline: none; border: 0; padding-left: 1rem; width: 100%; height: 100%;
+                                -moz-appearance: none;-webkit-appearance:none; appearance:none; border: 0;
+                                clip:rect(2 80 20 2);margin:-2; color: #999;
+                                option{ background:#eeeeee;}
+                               }
+                       }
+            }
+        .coo{ border: 0;}
+      }
+      
+.cont3{ flex: 56;
+        div{ width: 90%; margin: 0 auto; text-align: center; height: 3rem; line-height: 3rem;}
+        .ensure{ background: #ffd444; font-size: 1.2rem; margin-top: 4.5rem;}
+      }

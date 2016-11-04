@@ -1,0 +1,260 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  font-family: "Microsoft yahei";
+}
+
+body, h1, h2, h3, h4, h5, h6, blockquote, ol, ul, dl, dd, p, textarea, input, select, option, form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f5f4f0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ol, ul, textarea, input, option, th, td {
+  padding: 0;
+}
+
+.page {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+input[type=text], textarea {
+  -webkit-appearance: none;
+}
+
+input:focus {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a, textarea, input {
+  outline: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 75% !important;
+    /* 12梅16=73.4% */
+  }
+}
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 87.89063% !important;
+    /* 14.0625梅16=73.2% */
+  }
+}
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 97.03% !important;
+    /* 15.525梅16=94% */
+  }
+}
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 112.5% !important;
+    /* 18梅16=94% */
+  }
+}
+@media only screen and (min-width: 560px) {
+  html {
+    font-size: 131.25% !important;
+    /* 21梅16=109% */
+  }
+}
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 150% !important;
+    /* 24梅16=125% */
+  }
+}
+@media only screen and (min-width: 720px) {
+  html {
+    font-size: 168.75% !important;
+    /* 27梅16=146.43% */
+  }
+}
+@media only screen and (min-width: 750px) {
+  html {
+    font-size: 175.78125% !important;
+    /* 28.125梅16=146.43% */
+  }
+}
+@media only screen and (min-width: 800px) {
+  html {
+    font-size: 187.5% !important;
+    /* 30梅16=146.43% */
+  }
+}
+@media only screen and (min-width: 960px) {
+  html {
+    font-size: 225% !important;
+    /* 36梅16=146.43% */
+  }
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#header {
+  width: 100%;
+  height: 3.66667rem;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  line-height: 3.66667rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  color: #000000;
+  background: #ffffff;
+}
+#header span {
+  font-size: 0.8rem !important;
+}
+#header span i {
+  font-size: 1.6rem !important;
+}
+#header .search {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+}
+#header .text {
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+  -webkit-box-flex: 8;
+  -moz-box-flex: 8;
+}
+#header .text input {
+  width: 80%;
+  border: 0;
+  color: #EAEAEA;
+  letter-spacing: 0.12rem;
+}
+#header .shopcart {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  font-size: 0.8rem;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#search-content {
+  position: fixed;
+  top: 3.76667rem;
+  width: 100vw;
+  height: 100vh;
+  background: #FFFFFF;
+  padding: 1rem;
+  letter-spacing: 0.12rem;
+}
+#search-content #hotheadline, #search-content #historyheadline {
+  color: #CCCCCC;
+}
+
+#hotsearch, #searchhistory {
+  width: 95%;
+  height: auto;
+  overflow: hidden;
+}
+#hotsearch li, #searchhistory li {
+  padding: 0.6rem 1.2rem;
+  float: left;
+  background: #F7F7F7;
+  margin-right: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+#searchhistory {
+  margin-top: 3rem;
+}
+#searchhistory .delwrap {
+  width: 100vw;
+}
+#searchhistory .delwrap .delete {
+  position: absolute;
+  right: 2.5rem;
+}
+
+/*# sourceMappingURL=search.css.map */

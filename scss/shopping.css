@@ -1,0 +1,600 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  font-family: "Microsoft yahei";
+}
+
+html, body, h1, h2, h3, h4, h5, h6, blockquote, ol, ul, dl, dd, p, textarea, input, select, option, form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f5f4f0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ol, ul, textarea, input, option, th, td {
+  padding: 0;
+}
+
+.page {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+input[type=text], textarea {
+  -webkit-appearance: none;
+}
+
+input:focus {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a, textarea, input {
+  outline: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 75% !important;
+    /* 12梅16=73.4% */
+  }
+}
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 87.89063% !important;
+    /* 14.0625梅16=73.2% */
+  }
+}
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 97.03% !important;
+    /* 15.525梅16=94% */
+  }
+}
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 112.5% !important;
+    /* 18梅16=94% */
+  }
+}
+@media only screen and (min-width: 560px) {
+  html {
+    font-size: 131.25% !important;
+    /* 21梅16=109% */
+  }
+}
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 150% !important;
+    /* 24梅16=125% */
+  }
+}
+@media only screen and (min-width: 720px) {
+  html {
+    font-size: 168.75% !important;
+    /* 27梅16=146.43% */
+  }
+}
+@media only screen and (min-width: 750px) {
+  html {
+    font-size: 175.78125% !important;
+    /* 28.125梅16=146.43% */
+  }
+}
+@media only screen and (min-width: 800px) {
+  html {
+    font-size: 187.5% !important;
+    /* 30梅16=146.43% */
+  }
+}
+@media only screen and (min-width: 960px) {
+  html {
+    font-size: 225% !important;
+    /* 36梅16=146.43% */
+  }
+}
+body, html {
+  background: #fafafa;
+  color: #000000;
+}
+
+#header {
+  width: 100%;
+  height: 3.66667rem;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  line-height: 3.66667rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  color: #000000;
+  background: #ffffff;
+}
+#header span {
+  font-size: 1.5rem !important;
+  display: block;
+}
+#header span a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #000000;
+}
+#header span i {
+  font-size: 1.6rem !important;
+  position: relative;
+}
+#header span i .inum {
+  font-size: 0.5rem !important;
+  line-height: 1rem;
+  text-align: center;
+  background: #ffd444;
+  border-radius: 50%;
+  top: -0.1rem;
+  position: absolute;
+  display: inline-block;
+  color: #000;
+  width: 1rem;
+  font-weight: normal;
+  left: 1rem;
+}
+#header .search {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+}
+#header .text {
+  font-weight: 700;
+  -webkit-flex: 6;
+  -ms-flex: 6;
+  flex: 6;
+  -webkit-box-flex: 6;
+  -moz-box-flex: 6;
+}
+#header .shopcart {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+}
+
+#footer {
+  width: 100%;
+  height: 4.08333rem;
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  background: #141414;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+#footer span {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  color: #cccccc;
+  display: block;
+}
+#footer span a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #cccccc;
+  padding-top: 0.4rem;
+}
+#footer span.active a {
+  color: #ffdd44 !important;
+}
+#footer span i {
+  font-size: 2rem;
+}
+
+#container .nav {
+  width: 100%;
+  height: 3.125rem;
+}
+#container .nav nav {
+  width: 100%;
+  height: 3.125rem;
+  line-height: 3.125rem;
+  background: #fff;
+  display: flex;
+  flex: 1;
+  list-style: none;
+  justify-content: space-around;
+  border-bottom: 1px solid #f7f7f7;
+  position: fixed;
+  left: 0;
+  top: 3.54167rem;
+  z-index: 2;
+}
+#container .nav nav li {
+  padding: 0 0.83333rem;
+}
+#container .nav nav li.active {
+  border-bottom: 0.16667rem solid #000;
+}
+
+#viewport {
+  width: 100%;
+  overflow: hidden;
+}
+#viewport .view {
+  width: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+.classific {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.classific .row {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 0.91667rem;
+}
+.classific .row .rowlist {
+  flex: 1;
+  margin-right: 0.5rem;
+  background: #f6f6f6;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.classific .row .rowlist p {
+  color: #d0d0d0;
+  font-size: 12px;
+  padding: 0.625rem 0 0 0.625rem;
+}
+.classific .row .rowlist p b {
+  color: #000;
+  font-size: 1rem;
+}
+.classific .row .rowlist p.englishName {
+  padding: 0.33333rem 0 0 0.625rem;
+}
+.classific .row .rowlist img {
+  width: 100%;
+}
+.classific .row .rowlist:last-child {
+  margin-right: 0;
+}
+.classific .row .more a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #808080;
+}
+.classific .row .more a span:first-child {
+  border-bottom: 1px solid #808080;
+}
+.classific .row:last-child {
+  margin-bottom: 0;
+}
+
+.weeknew {
+  width: 100%;
+  height: 12.91667rem;
+  margin-top: 1rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.weeknew .title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+.weeknew .swiper-container {
+  flex: 3;
+  width: 100%;
+}
+.weeknew .swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.weeknew .swiper-container .swiper-wrapper .swiper-slide {
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.70833rem;
+}
+.weeknew .swiper-container .swiper-wrapper .swiper-slide a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+}
+.weeknew .swiper-container .swiper-wrapper .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+}
+.weeknew .swiper-container .swiper-wrapper .swiper-slide a p {
+  flex: 1;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.weeknew .swiper-container .swiper-wrapper .swiper-slide a p:first-child {
+  flex: 5;
+}
+
+.bag {
+  width: 100%;
+  height: 26.66667rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  box-sizing: border-box;
+  padding: 2.08333rem;
+}
+.bag p {
+  flex: 1;
+  text-align: center;
+  color: #000000;
+}
+.bag p:nth-of-type(3) {
+  flex: 5;
+}
+.bag p:nth-of-type(3) img {
+  width: 100%;
+  height: 13.33333rem;
+}
+.bag p:first-child {
+  color: #000000;
+  font-size: 1.41667rem;
+}
+.bag p:nth-of-type(2) {
+  color: #808080;
+}
+
+.singleShop {
+  width: 100%;
+  height: 15.625rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.singleShop div:first-child {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+.singleShop div:last-child {
+  flex: 3;
+  display: flex;
+}
+.singleShop div:last-child div:first-child {
+  flex: 2;
+}
+.singleShop div:last-child div:first-child img {
+  width: 100%;
+  height: 100%;
+}
+.singleShop div:last-child div:last-child {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-size: 0.75rem;
+  box-sizing: border-box;
+  padding-left: 1rem;
+}
+.singleShop div:last-child div:last-child p {
+  flex: 1;
+}
+.singleShop div:last-child div:last-child p:first-child {
+  color: #000000;
+  font-size: 1rem;
+}
+.singleShop div:last-child div:last-child p:nth-of-type(2) {
+  flex: 2;
+}
+.singleShop div:last-child div:last-child p:last-child i {
+  font-style: normal;
+}
+
+.scene {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  margin-top: 1rem;
+}
+.scene .title {
+  width: 100%;
+  height: 3.33333rem;
+  line-height: 3.33333rem;
+  box-sizing: border-box;
+  padding-left: 1rem;
+}
+.scene .sceneshow {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.scene .sceneshow .row {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+.scene .sceneshow .row .rowlist {
+  flex: 1;
+  margin-right: 0.5rem;
+}
+.scene .sceneshow .row .rowlist img {
+  width: 100%;
+  height: 100%;
+}
+.scene .sceneshow .row .rowlist:last-child {
+  margin-right: 0;
+}
+.scene .sceneshow .row:last-child {
+  margin-bottom: 0;
+}
+
+.viewmain {
+  width: 100%;
+  overflow: hidden;
+}
+.viewmain .head {
+  width: 100%;
+  height: 3.58333rem;
+  line-height: 3.58333rem;
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+}
+.viewmain .tail {
+  width: 100%;
+  height: 4.08333rem;
+  line-height: 4.08333rem;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+  border-bottom: 1px solid #F7F7F7;
+}
+.viewmain .tail span:first-child {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.viewmain .tail span:first-child img {
+  width: 3.45833rem;
+  height: 3.45833rem;
+}
+.viewmain .tail span:last-child {
+  flex: 6;
+}
+
+.viewside {
+  width: 3.33333rem;
+  height: 80vh;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  top: 6.66667rem;
+}
+.viewside ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.viewside ul li {
+  flex: 1;
+}
+.viewside ul li a {
+  text-decoration: none;
+  font-size: 0.58333rem;
+  color: #000000;
+}
+
+.tianbu {
+  width: 100%;
+  height: 4.16667rem;
+}
+
+.butou {
+  height: 3.54167rem;
+  width: 100%;
+}
+
+/*# sourceMappingURL=shopping.css.map */

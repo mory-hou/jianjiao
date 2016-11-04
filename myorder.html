@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>尖叫设计</title>
+		<link rel="shortcut icon"  type="image/ico" href="http://og42u3hva.bkt.clouddn.com/img/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_8bybdble4wxhto6r.css" />
+		<link rel="stylesheet" type="text/css" href="scss/myorder.css" />
+		<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+	</head>
+
+	<body>
+		<header id="header">
+			<div class="header">
+				<a href="wo.html">
+					<i class="iconfont icon-xiangzuojiantou"></i>
+				</a>
+				<div>我的订单</div>
+				<a href="javascript:void(0)"></a>
+			</div>
+		</header>
+		<section id="container">
+			<nav>
+				<li class="active">全部</li>
+				<li>待付款</li>
+				<li>待发货</li>
+				<li>待收货</li>
+				<li>已完成</li>
+			</nav>
+			<div id="viewport">
+				<div class="view">
+					<div class="orderlist">
+						<div class="ordermes">
+							<span>订单:<i>52013141111</i></span>
+							<span>待付款</span>
+						</div>
+						<div class="orderimg">
+							<img src="http://og42u3hva.bkt.clouddn.com/img/mo.jpg" alt="" />
+							<img src="http://og42u3hva.bkt.clouddn.com/img/mo.jpg" alt="" />
+							<img src="http://og42u3hva.bkt.clouddn.com/img/mo.jpg" alt="" />
+							<img src="http://og42u3hva.bkt.clouddn.com/img/mo.jpg" alt="" />
+						</div>
+						<div class="orderpay">
+							<span>共<i class="shopnum">4</i>件 合计:<b>￥<i class="shopaccount">520.00</i></b></span>
+							<span>立即支付</span>
+						</div>
+					</div>
+				</div>
+				<div class="view">2</div>
+				<div class="view">3</div>
+				<div class="view">4</div>
+				<div class="view">5</div>
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript">
+		$(".view").eq(0).show();
+		$("nav li").on("touchstart",function(){
+			$(this).addClass("active").siblings().removeClass("active");
+			var liIndex = $(this).index();
+			$(".view").eq(liIndex).show().siblings().hide();
+		})
+	</script>
+</html>

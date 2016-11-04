@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<link rel="shortcut icon" type="image/ico" href="http://og42u3hva.bkt.clouddn.com/img/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_8bybdble4wxhto6r.css" />
+		<link rel="stylesheet" type="text/css" href="scss/jingxuan.css" />
+		<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<title>尖叫设计</title>
+	</head>
+
+	<body onload="loaded()">
+		<header id="header">
+			<span class="search">
+				<a href="search.html">
+					<i class="iconfont icon-sousuo"></i>
+				</a>
+			</span>
+			<span class="text">精选</span>
+			<span class="shopcart">
+				<a href="shopcart.html">
+						<i class="iconfont icon-gouwuche"><i class="inum"></i></i>
+				</a>
+			</span>
+		</header>
+		<section id="jingxuanwrap">
+			<nav id="jingxuancontent">
+				<li>
+					<a href="javascript:;"><img src="http://og42u3hva.bkt.clouddn.com/img/jingxuan/frist1.png"></a>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="http://og42u3hva.bkt.clouddn.com/img/jingxuan/frist2.png"></a>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="http://og42u3hva.bkt.clouddn.com/img/jingxuan/frist3.png"></a>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="http://og42u3hva.bkt.clouddn.com/img/jingxuan/frist4.png"></a>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="http://og42u3hva.bkt.clouddn.com/img/jingxuan/frist5.png"></a>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="http://og42u3hva.bkt.clouddn.com/img/jingxuan/frist3.png"></a>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="http://og42u3hva.bkt.clouddn.com/img/jingxuan/frist4.png"></a>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="http://og42u3hva.bkt.clouddn.com/img/jingxuan/frist5.png"></a>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="http://og42u3hva.bkt.clouddn.com/img/jingxuan/frist3.png"></a>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="http://og42u3hva.bkt.clouddn.com/img/jingxuan/frist4.png"></a>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="http://og42u3hva.bkt.clouddn.com/img/jingxuan/frist5.png"></a>
+				</li>
+			</nav>
+		</section>
+		<footer id="footer">
+			<span class="shouye">
+				<a href="shouye.html">
+						<i class="iconfont icon-shouye"></i>
+						<p>首页</p>
+				</a>
+			</span>
+			<span class="gouwudai">
+				<a href="shopping.html">
+					<i class="iconfont icon-gouwudai"></i>
+					<p>购物</p>
+				</a>
+			</span>
+			<span class="jingxuan active">
+				<a href="jingxuan.html">
+						<i class="iconfont icon-jingxuan"></i>
+						<p>精选</p>
+				</a>
+			</span>
+			<span class="xihuan">
+				<a href="xihuan.html">
+					<i class="iconfont icon-xihuan"></i>
+					<p>喜欢</p>
+				</a>
+			</span>
+			<span class="wo">
+				<a href="wo.html">
+					<i class="iconfont icon-wo"></i>
+					<p>我</p>
+				</a>
+			</span>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		var myScroll;
+
+		function loaded() {
+			myScroll = new IScroll('#jingxuanwrap', {
+				preventDefault: false
+			});
+		}
+		document.addEventListener('touchmove', function(e) {
+			e.preventDefault();
+		}, false);
+		
+		anum();
+		function anum(){
+			var length = localStorage.length;
+			var num1 = 0;
+			for(var i=0;i<length;i++){
+				var akey = localStorage.key(i);
+				if(akey.indexOf("goods_")!=-1){
+				var info = JSON.parse(localStorage.getItem(akey));
+				num1 += parseInt(info["num"]) 
+				}
+			}
+		if(num1!=0){
+			$(".icon-gouwuche i").show();
+			$(".icon-gouwuche i").html(num1);
+		}else{
+				$(".icon-gouwuche i").hide();
+			}
+		}
+	</script>
+</html>

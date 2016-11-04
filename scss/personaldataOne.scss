@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import "mobile";
+body,html{ width: 100%; height: 100%}
+@mixin flex{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.warp{
+    overflow: hidden;
+    @include flex;
+    flex-direction: column;
+    height: 100%; width: 100%;
+    background: #f5f5f4;
+    font-size: 1rem;
+    position: relative;
+    .box{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: none;
+    }
+    .touxiang{ position: absolute; height: 100%; width: 100%; z-index: 10; background: black; flex-direction: column;
+           filter:alpha(opacity=40); -moz-opacity:0.4; -khtml-opacity: 0.4; opacity: 0.4; @include flex;
+             .tp{ flex: 6.5;}
+             .ft{ flex: 3.5; flex-direction: column; @include flex;
+                 div{width: 94%; margin: 0.1rem auto; flex: 1; background: whitesmoke; @include flex; justify-content: center;
+                     align-items: center; font-size: 1.1rem;
+                      a{ color: blue;} 
+                    }
+                 .xiugai{ flex: 0.9; margin-top: 1rem; font-size: 0.8rem; border-top-left-radius: 0.4rem;
+                          -webkit-border-top-right-radius: 0.4rem;}
+                 .photo{ border-bottom-left-radius: 0.4rem; border-bottom-right-radius: 0.4rem;}         
+                 .cancle{ margin-top: 1rem; margin-bottom: 0.5rem; border-radius: 0.4rem;}
+                 
+                } 
+            }
+}
+
+.cont1{ flex: 7.9; background: white;@include flex; flex-direction: row; border-bottom: 1px solid #ededed;
+        a{ flex: 1; @include flex; color: black;}
+        .a1{ align-items: center; font-size: 1.3rem;
+             i{ color: black; margin-left: 1rem;}
+           }
+        .a2{ justify-content: center; align-items: center; font-size: 1.3rem;}
+        .a3{ align-items: center; flex-direction: row-reverse;}
+      }
+
+.cont2{ flex: 36.1; @include flex; flex-direction: column; padding-left: 1rem; background: white;
+        .co1{ flex: 30.6!important;}
+        .co2{ flex: 23.13; border-bottom: 1px solid #ededed; @include flex; flex-direction: row;
+              .names{ flex: 1; @include flex; align-items: center;}
+              .describe{ flex: 4; @include flex; align-items: center;
+                         input{ @include flex; align-items: center; outline: none; border: 0; text-indent: 1rem; width: 100%; height: 100%;}
+                       }
+              .port{ 
+                         @include flex; justify-content: flex-start; align-items: center;
+                         #portrait{ color: black; width: 3rem; height: 3rem; border-radius: 50%; margin-left: 1rem;}
+                       }         
+            }
+        .coo{ border: 0;}
+      }
+      
+.cont3{ flex: 56;
+        div{ width: 90%; margin: 0 auto; text-align: center; height: 2.5rem; line-height: 2.5rem;}
+        .nexts{ background: #ffd444; font-size: 1.2rem; margin-top: 4.5rem;}
+      }

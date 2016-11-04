@@ -1,0 +1,363 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  font-family: "Microsoft yahei";
+}
+
+html, body, h1, h2, h3, h4, h5, h6, blockquote, ol, ul, dl, dd, p, textarea, input, select, option, form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f5f4f0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ol, ul, textarea, input, option, th, td {
+  padding: 0;
+}
+
+.page {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+input[type=text], textarea {
+  -webkit-appearance: none;
+}
+
+input:focus {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a, textarea, input {
+  outline: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 75% !important;
+    /* 12梅16=73.4% */
+  }
+}
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 87.89063% !important;
+    /* 14.0625梅16=73.2% */
+  }
+}
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 97.03% !important;
+    /* 15.525梅16=94% */
+  }
+}
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 112.5% !important;
+    /* 18梅16=94% */
+  }
+}
+@media only screen and (min-width: 560px) {
+  html {
+    font-size: 131.25% !important;
+    /* 21梅16=109% */
+  }
+}
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 150% !important;
+    /* 24梅16=125% */
+  }
+}
+@media only screen and (min-width: 720px) {
+  html {
+    font-size: 168.75% !important;
+    /* 27梅16=146.43% */
+  }
+}
+@media only screen and (min-width: 750px) {
+  html {
+    font-size: 175.78125% !important;
+    /* 28.125梅16=146.43% */
+  }
+}
+@media only screen and (min-width: 800px) {
+  html {
+    font-size: 187.5% !important;
+    /* 30梅16=146.43% */
+  }
+}
+@media only screen and (min-width: 960px) {
+  html {
+    font-size: 225% !important;
+    /* 36梅16=146.43% */
+  }
+}
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+.warp {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: #f5f5f4;
+  font-size: 1rem;
+}
+
+.cont1 {
+  flex: 7.9;
+  background: white;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex-direction: row;
+  border-bottom: 1px solid #ededed;
+}
+.cont1 a {
+  flex: 1;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  color: black;
+}
+.cont1 .a1 {
+  align-items: center;
+  font-size: 1.3rem;
+}
+.cont1 .a1 i {
+  color: black;
+  margin-left: 1rem;
+}
+.cont1 .a2 {
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.cont1 .a3 {
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.cont2 {
+  flex: 36.1;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex-direction: column;
+  padding-left: 1rem;
+  background: white;
+}
+.cont2 .co1 {
+  flex: 30.6 !important;
+}
+.cont2 .co1 .describe {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  align-items: center;
+}
+.cont2 .co1 .describe .sex {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 2rem;
+}
+.cont2 .co2 {
+  flex: 23.13;
+  border-bottom: 1px solid #ededed;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex-direction: row;
+}
+.cont2 .co2 .names {
+  flex: 1;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  align-items: center;
+}
+.cont2 .co2 .describe {
+  flex: 4;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  align-items: center;
+}
+.cont2 .co2 .describe input {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  align-items: center;
+  outline: none;
+  border: 0;
+  text-indent: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.cont2 .co2 .describe select {
+  outline: none;
+  border: 0;
+  padding-left: 1rem;
+  width: 100%;
+  height: 100%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0;
+  clip: rect(2 80 20 2);
+  margin: -2;
+  color: #999;
+}
+.cont2 .co2 .describe select option {
+  background: #eeeeee;
+}
+.cont2 .coo {
+  border: 0;
+}
+
+.cont3 {
+  flex: 56;
+}
+.cont3 div {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  height: 3rem;
+  line-height: 3rem;
+}
+.cont3 .ensure {
+  background: #ffd444;
+  font-size: 1.2rem;
+  margin-top: 4.5rem;
+}
+
+/*# sourceMappingURL=personaldataTwo.css.map */

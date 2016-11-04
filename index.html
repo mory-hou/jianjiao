@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<!--移动端的常用适配-->
+		<title>尖叫设计</title>
+		<link rel="shortcut icon"  type="image/ico" href="http://og42u3hva.bkt.clouddn.com/img/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="scss/index.css"/>
+	</head>
+	<body>
+		<div class="warp">
+			<section class="dhy">
+				<img class="login1" src="http://og42u3hva.bkt.clouddn.com/img/normallogin_1.png"/>
+			</section>
+		</div>
+	</body>
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script>
+			var  judge =JSON.parse(localStorage.getItem("newUser"));
+			 
+			//判断是否进入过
+			if(judge!=null)
+			{
+				$("html").fadeOut(1500,function(){
+					location.href="dhysecond.html";
+				})
+			}
+			else
+			{
+				var footmark={"jianjiao":"newUser"};
+				localStorage.setItem("newUser",JSON.stringify(footmark));
+				$("html").fadeOut(1500,function(){
+					location.href="dhyfirst.html";
+				})
+			}
+			
+		
+	</script>
+</html>

@@ -1,0 +1,180 @@
+@charset "utf-8";
+@import "mobile";
+#my-content {
+    width: 100vw;
+    height: 150vw;
+    margin-top: 25vw;
+    background: #F5F5F5;
+    position: relative;
+}
+#kong {
+    #kong-img {
+        width: 100vw;
+        height: 70vh;
+        @include flexbox();
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        img {
+            width: 50vw;
+        }
+    }
+    p {
+        text-align: center;
+        line-height: 5vw;
+        margin-left: 8vw;
+        margin-top: -20vh;
+    }
+}
+.sli {
+    position: relative;
+    width: 100vw;
+    height: 150vw;
+    overflow: hidden;
+    /* Prevent native touch events on Windows */
+    -ms-touch-action: none;
+    /* Prevent the callout on tap-hold and text selection */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* Prevent text resize on orientation change, useful for web-apps */
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+    .nav-frist1 {
+        position: absolute;
+        /* Put the scroller into the HW Compositing layer right from the start */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+        width: 100vw;
+        height: auto;
+    }
+}
+#header{
+    width: 100%;
+    height: $headerheight;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    line-height: $headerheight;
+    text-align: center;
+    @include flexbox();
+    color: #000000;
+    background: #ffffff;
+    span{
+        font-size:0.8rem !important;
+        
+        i {
+            font-size: 1.6rem !important;
+        }
+    }
+    .search{
+        @include flex(1);
+    }
+    .text{
+        @include flex(8);
+        input{
+            width:80%;
+            border:0;
+            color:#EAEAEA;
+            letter-spacing:0.12rem;
+        }
+//      .close{
+//          width:(49rem/34);
+//          height:(49rem/34);
+//          line-height:(49rem/34);
+//          display: inline-block;
+//          background:#EAEAEA;
+//          color:#FFFFFF;
+//          border-radius:50%;
+//          font-size:0.8rem;
+//      }
+    }
+    .shopcart{
+        @include flex(1);
+        font-size:0.8rem;
+    }
+}
+a{
+    color:#000000;
+    text-decoration: none;
+}
+    a:link{
+        text-decoration: none;
+    }
+.my-nav {
+    width: 100vw;
+    background: #FFFFFF;
+    position: absolute;
+    top: $headerheight;
+    text-align: center;
+    letter-spacing:0.5rem;
+    .slide1 {
+        width: 33vw!important;
+        float: left;
+        height:(123rem/42);
+        line-height:(123rem/42);
+        color: #000;
+        span {
+            font-weight: normal;
+        }
+        &.active {
+            span {
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+.slide2 {
+    li:nth-child(n) {
+        border-right: 1px solid #EAEAEA;
+    }
+    li{
+        width: 49.5vw;
+        height:18rem;
+         float: left;
+         background:#FFFFFF;
+          border-bottom: 1px solid #EAEAEA;
+          position: relative;
+         span{
+             margin-left:0.5rem;
+         }
+         p{
+             margin-left:1.5rem;
+         }
+         i{
+             position: absolute;
+             bottom:0.5rem;
+             right:1rem;
+         }
+         a {
+        width: 49.5vw;
+        height: 49.5vw;
+        @include flexbox();
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+            img {
+                height:60%;
+            }
+        
+    }
+    }
+   
+}
+#slideline{
+    width:4rem;
+    height:0.4rem;
+    background:#000000;
+    position: absolute;
+    bottom:0;
+    left:(33vw/3.5);
+}
