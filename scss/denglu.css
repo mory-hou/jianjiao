@@ -260,16 +260,6 @@ input {
   align-items: center;
   flex: 33.7;
   margin-left: 1rem;
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;
-  /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
   flex-direction: row;
 }
 .mima .pwd {
@@ -302,7 +292,7 @@ input {
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  height: 2.5rem;
+  height: 3.5rem;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;
@@ -327,7 +317,7 @@ input {
 }
 .cont2 .wxlogin i {
   color: green;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .cont2 .zc {
   margin-top: 1rem;
