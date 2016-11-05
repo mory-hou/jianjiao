@@ -143,7 +143,7 @@
 .sli {
     position: relative;
     width: 100vw;
-    height:(435rem/12);
+    height:(519rem/12);
     overflow: hidden;
     /* Prevent native touch events on Windows */
     -ms-touch-action: none;
@@ -167,8 +167,8 @@
         -ms-transform: translateZ(0);
         -o-transform: translateZ(0);
         transform: translateZ(0);
-        width: 100vw;
-       // height: auto;
+        width: 100vw;    
+        height:(1740rem/12); 
     }
 }
 .slide2 {

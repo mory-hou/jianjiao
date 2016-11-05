@@ -566,6 +566,10 @@ textarea {
   font-weight: bold;
   outline: none;
 }
+#buy-showder #buies button {
+  background: #F5F5F4;
+  border: 0;
+}
 #buy-showder #buies .number {
   width: 14vw;
   background: #FFFFFF;

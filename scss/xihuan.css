@@ -322,7 +322,7 @@ textarea {
 .sli {
   position: relative;
   width: 100vw;
-  height: 36.25rem;
+  height: 43.25rem;
   overflow: hidden;
   /* Prevent native touch events on Windows */
   -ms-touch-action: none;
@@ -348,6 +348,7 @@ textarea {
   -o-transform: translateZ(0);
   transform: translateZ(0);
   width: 100vw;
+  height: 145rem;
 }
 
 .slide2 li:nth-child(2n-1) {

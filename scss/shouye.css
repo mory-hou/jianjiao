@@ -261,7 +261,7 @@ textarea {
 .wrap-wrap {
   width: 100vw;
   position: relative;
-  height: 43.33333rem;
+  height: 44.16667rem;
   overflow: hidden;
   -ms-touch-action: none;
   -webkit-touch-callout: none;
@@ -277,7 +277,7 @@ textarea {
 }
 .wrap-wrap .wrap {
   position: absolute;
-  height: 324.16667rem;
+  height: 327.5rem;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -317,6 +317,9 @@ textarea {
   padding: 0 3.5rem;
   font-size: 1rem;
   color: #808080;
+}
+.wrap-wrap .wrap .listwrap .item-warp3 .list {
+  width: 93rem;
 }
 .wrap-wrap .wrap .listwrap .list {
   position: absolute;

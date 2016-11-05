@@ -85,8 +85,8 @@
 .wrap-wrap{
      width:100vw;
      position: relative;
-    // height: auto;
-    height:(520rem/12);
+
+    height:(530rem/12);
      overflow: hidden;
     -ms-touch-action: none;
     -webkit-touch-callout: none;
@@ -101,7 +101,7 @@
     text-size-adjust: none;
     .wrap{
         position: absolute;
-        height:(3890rem/12);
+        height:(3930rem/12);
         -webkit-transform: translateZ(0);
         -moz-transform: translateZ(0);
         -ms-transform: translateZ(0);
@@ -141,6 +141,11 @@
                 padding: 0 3.5rem;
                 font-size: 1rem;
                 color: #808080;
+            }
+            .item-warp3{
+                .list{
+                    width:(900rem/12)+18rem;
+                }
             }
             .list{
                 position: absolute;
@@ -245,6 +250,7 @@
     -ms-text-size-adjust: none;
     -o-text-size-adjust: none;
     text-size-adjust: none;
+
     .list{
             position: absolute;
             -webkit-transform: translateZ(0);
@@ -252,5 +258,7 @@
             -ms-transform: translateZ(0);
             -o-transform: translateZ(0);
             transform: translateZ(0);
+            
     }  
-   }
+}     
+
