@@ -50,8 +50,8 @@ body,html{ width: 100%; height: 100%}
       }
 
 .cont2{ flex: 36.1; @include flex; flex-direction: column; padding-left: 1rem; background: white;
-        .co1{ flex: 28 !important;}
-        .co2{ flex: 24; border-bottom: 1px solid #ededed; @include flex; flex-direction: row;
+        //.co1{ flex: 25 !important;}
+        .co2{ flex: 25; border-bottom: 1px solid #ededed; @include flex; flex-direction: row;
               .names{ flex: 1; @include flex; align-items: center;}
               .describe{ flex: 4; @include flex; align-items: center;
                          input{ @include flex; align-items: center; outline: none; border: 0; text-indent: 1rem; width: 100%; height: 100%;}
