@@ -4,6 +4,9 @@ for(var i=0;i<length;i++){
 	if(key.indexOf("jj_username")!=-1){
 		var info = JSON.parse(localStorage.getItem(key));
 		$("#headerfooter .zhuce").html(info["username"]);
+		$("#headerfooter").on("touchstart",function(){
+			null;
+		});
 		break;
 	}else{
 		$("#headerfooter .zhuce").html("点击登录/注册");
