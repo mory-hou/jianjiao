@@ -261,7 +261,7 @@ textarea {
 .wrap-wrap {
   width: 100vw;
   position: relative;
-  height: 100vh;
+  height: 43.33333rem;
   overflow: hidden;
   -ms-touch-action: none;
   -webkit-touch-callout: none;
@@ -277,7 +277,7 @@ textarea {
 }
 .wrap-wrap .wrap {
   position: absolute;
-  height: auto;
+  height: 324.16667rem;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -285,7 +285,6 @@ textarea {
   transform: translateZ(0);
   margin-top: 3.66667rem;
   margin-bottom: 4.08333rem;
-  width: 100%;
 }
 .wrap-wrap .wrap .imgwrap {
   width: 100%;

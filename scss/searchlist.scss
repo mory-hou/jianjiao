@@ -3,7 +3,7 @@
 #my-content {
     width: 100vw;
     height: 150vw;
-    margin-top: 25vw;
+    margin-top: 6.7rem;
     background: #F5F5F5;
     position: relative;
 }
@@ -29,17 +29,14 @@
 .sli {
     position: relative;
     width: 100vw;
-    height: 150vw;
+    height: 87vh;
     overflow: hidden;
-    /* Prevent native touch events on Windows */
     -ms-touch-action: none;
-    /* Prevent the callout on tap-hold and text selection */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    /* Prevent text resize on orientation change, useful for web-apps */
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
@@ -47,14 +44,12 @@
     text-size-adjust: none;
     .nav-frist1 {
         position: absolute;
-        /* Put the scroller into the HW Compositing layer right from the start */
         -webkit-transform: translateZ(0);
         -moz-transform: translateZ(0);
         -ms-transform: translateZ(0);
         -o-transform: translateZ(0);
         transform: translateZ(0);
         width: 100vw;
-        height: auto;
     }
 }
 #header{
@@ -70,9 +65,8 @@
     background: #ffffff;
     span{
         font-size:0.8rem !important;
-        
         i {
-            font-size: 1.6rem !important;
+           font-size: 1.6rem !important;
         }
     }
     .search{
@@ -86,16 +80,6 @@
             color:#EAEAEA;
             letter-spacing:0.12rem;
         }
-//      .close{
-//          width:(49rem/34);
-//          height:(49rem/34);
-//          line-height:(49rem/34);
-//          display: inline-block;
-//          background:#EAEAEA;
-//          color:#FFFFFF;
-//          border-radius:50%;
-//          font-size:0.8rem;
-//      }
     }
     .shopcart{
         @include flex(1);
@@ -134,11 +118,11 @@ a{
 }
 
 .slide2 {
-    li:nth-child(n) {
-        border-right: 1px solid #EAEAEA;
+    li:nth-child(2n-1) {
+        border-right: 0.5vw solid #EAEAEA;
     }
     li{
-        width: 49.5vw;
+        width: 49.75vw;
         height:18rem;
          float: left;
          background:#FFFFFF;
@@ -148,14 +132,14 @@ a{
              margin-left:0.5rem;
          }
          p{
-             margin-left:1.5rem;
+            margin-left:1.5rem;
          }
          i{
              position: absolute;
              bottom:0.5rem;
              right:1rem;
          }
-         a {
+        a{
         width: 49.5vw;
         height: 49.5vw;
         @include flexbox();
@@ -165,7 +149,6 @@ a{
             img {
                 height:60%;
             }
-        
     }
     }
    

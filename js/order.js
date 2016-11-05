@@ -39,6 +39,11 @@ function  getData(){
 
 totalPrice();
 function totalPrice(){
-	var totalPrice = $(".shopaccount span").eq(1).html()-$(".coupon i").html()+$(".freight i").html();
+	if($(".shopaccount span").eq(1).html()*1>0){
+		var totalPrice = $(".shopaccount span").eq(1).html()*1-$(".coupon i").html()*1+$(".freight i").html()*1;
+	}
+	else{
+		var totalPrice = 0;
+	}
 	$(".totalPrice").html(totalPrice);
 }

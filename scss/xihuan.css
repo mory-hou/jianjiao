@@ -292,7 +292,7 @@ textarea {
 #my-content {
   width: 100vw;
   height: 150vw;
-  margin-top: 25vw;
+  margin-top: 6.7rem;
   background: #F5F5F5;
   position: relative;
 }
@@ -322,7 +322,7 @@ textarea {
 .sli {
   position: relative;
   width: 100vw;
-  height: 150vw;
+  height: 36.25rem;
   overflow: hidden;
   /* Prevent native touch events on Windows */
   -ms-touch-action: none;
@@ -348,15 +348,14 @@ textarea {
   -o-transform: translateZ(0);
   transform: translateZ(0);
   width: 100vw;
-  height: auto;
 }
 
-.slide2 li:nth-child(n) {
-  border-right: 1px solid #EAEAEA;
+.slide2 li:nth-child(2n-1) {
+  border-right: 0.5vw solid #EAEAEA;
 }
 .slide2 li {
-  width: 49.5vw;
-  height: 49.5vw;
+  width: 49.75vw;
+  height: 49.75vw;
   float: left;
   display: -webkit-box;
   display: -moz-box;

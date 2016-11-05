@@ -157,7 +157,7 @@ textarea {
 #my-content {
   width: 100vw;
   height: 150vw;
-  margin-top: 25vw;
+  margin-top: 6.7rem;
   background: #F5F5F5;
   position: relative;
 }
@@ -187,17 +187,14 @@ textarea {
 .sli {
   position: relative;
   width: 100vw;
-  height: 150vw;
+  height: 87vh;
   overflow: hidden;
-  /* Prevent native touch events on Windows */
   -ms-touch-action: none;
-  /* Prevent the callout on tap-hold and text selection */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  /* Prevent text resize on orientation change, useful for web-apps */
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
@@ -206,14 +203,12 @@ textarea {
 }
 .sli .nav-frist1 {
   position: absolute;
-  /* Put the scroller into the HW Compositing layer right from the start */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);
   width: 100vw;
-  height: auto;
 }
 
 #header {
@@ -298,11 +293,11 @@ a:link {
   font-weight: bolder;
 }
 
-.slide2 li:nth-child(n) {
-  border-right: 1px solid #EAEAEA;
+.slide2 li:nth-child(2n-1) {
+  border-right: 0.5vw solid #EAEAEA;
 }
 .slide2 li {
-  width: 49.5vw;
+  width: 49.75vw;
   height: 18rem;
   float: left;
   background: #FFFFFF;

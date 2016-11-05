@@ -113,88 +113,11 @@
         
     }
 }
-//#my {
-//  width: 100%;
-//  height: $headerheight;
-//  position: fixed;
-//  top: 0;
-//  line-height: $headerheight;
-//  text-align: center;
-//  @include flexbox();
-//  color: #000000;
-//  background: #ffffff;
-//  span {
-//      font-size: 1.5rem !important;
-//      display: block;
-//      i {
-//          font-size: 1.6rem !important;
-//      }
-//  }
-//  .search {
-//      @include flex(1);
-//  }
-//  .text {
-//      font-weight: 700;
-//      @include flex(6);
-//  }
-//  .shopcart {
-//      @include flex(1);
-//  }
-//}
-//.my-nav {
-//  width: 100vw;
-//  background: #FFFFFF;
-//  position: absolute;
-//  top: $headerheight;
-//  text-align: center;
-//  .slide1 {
-//      width: 33vw!important;
-//      float: left;
-//      height:(123rem/54);
-//      line-height:(123rem/74);
-//      color: #000;
-//      span {
-//          font-size: 1.1rem;
-//          color: gray;
-//          font-weight: normal;
-//      }
-//      &.active {
-//          span {
-//              color: #000000;
-//              font-weight: bolder;
-//          }
-//      }
-//  }
-//}
-//#footer {
-//  width: 100%;
-//  height: $footerheight;
-//  background: green;
-//  position: fixed;
-//  bottom: 0;
-//  background: #141414;
-//  text-align: center;
-//  @include flexbox();
-//  z-index: 1;
-//  span {
-//      @include flex(1);
-//      color: #cccccc;
-//      display: block;
-//      &.active {
-//          color: #ffdd44;
-//      }
-//      i {
-//          font-size: 2rem;
-//      }
-//      p {
-//          margin-top: -0.5rem;
-//      }
-//  }
-//}
+
 #my-content {
     width: 100vw;
     height: 150vw;
-    margin-top: 25vw;
+    margin-top: 6.7rem;
     background: #F5F5F5;
     position: relative;
 }
@@ -220,7 +143,7 @@
 .sli {
     position: relative;
     width: 100vw;
-    height: 150vw;
+    height:(435rem/12);
     overflow: hidden;
     /* Prevent native touch events on Windows */
     -ms-touch-action: none;
@@ -245,16 +168,16 @@
         -o-transform: translateZ(0);
         transform: translateZ(0);
         width: 100vw;
-        height: auto;
+       // height: auto;
     }
 }
 .slide2 {
-    li:nth-child(n) {
-        border-right: 1px solid #EAEAEA;
+    li:nth-child(2n-1) {
+        border-right: 0.5vw solid #EAEAEA;
     }
     li {
-        width: 49.5vw;
-        height: 49.5vw;
+        width: 49.75vw;
+        height: 49.75vw;
         float: left;
         @include flexbox();
         justify-content: center;

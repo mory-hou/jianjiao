@@ -263,6 +263,7 @@ textarea {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  margin-top: 3.66667rem;
   -ms-touch-action: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -278,7 +279,7 @@ textarea {
 #jingxuanwrap #jingxuancontent {
   position: absolute;
   width: 100vw;
-  height: auto;
+  height: 306.25rem;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
